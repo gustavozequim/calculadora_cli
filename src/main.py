@@ -1,4 +1,4 @@
-from src.soma import Soma
+from soma import Soma
 
 def main():
     metds = ['Soma', 'Subtração', 'Divisão', 'Multiplicação', 'Raiz quadrada', 'Potência']
@@ -14,7 +14,8 @@ def main():
     
     match op:
         case 1:
-            Soma()
+            resultado = Soma()
+            print(f"O resultado da soma é: {resultado}")
         case 2:
             ...
         case 3:
@@ -25,7 +26,6 @@ def main():
             ...
         case 6:
             ...
-    print(f"Sua opcao foi {op}")
 
 if __name__ == "__main__":
     main()
