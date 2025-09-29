@@ -1,4 +1,5 @@
 from soma import Soma
+from subtracao import Subtracao
 
 def main():
     metds = ['Soma', 'Subtração', 'Divisão', 'Multiplicação', 'Raiz quadrada', 'Potência']
@@ -17,7 +18,8 @@ def main():
             resultado = Soma()
             print(f"O resultado da soma é: {resultado}")
         case 2:
-            ...
+            resultado = Subtracao()
+            print(f'O resultado da subtrção é: {resultado}')
         case 3:
             ...
         case 4:
