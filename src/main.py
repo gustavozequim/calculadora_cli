@@ -2,6 +2,7 @@ from soma import Soma
 from multiplicacao import Multiplicacao
 from raiz_quad import RaizQuadrada
 from potencia import Potencia
+from bd_operacoes import HistoricoOperacoes
 from subtracao import Subtracao
 from divisao import Divisao
 
@@ -43,6 +44,8 @@ def main():
             resultado = Potencia()
             print("=-"*20)
             print(f"O resultado da potência é: {resultado}")
+    
+    HistoricoOperacoes(resultado, resultado)
 
 if __name__ == "__main__":
     main()
