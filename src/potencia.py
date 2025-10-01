@@ -1,3 +1,3 @@
 def Potencia():
     a = int(input("Digite o numero para calcular a potencia: "))
-    return a**2
+    return f"{a}^2 = {a**2}"
