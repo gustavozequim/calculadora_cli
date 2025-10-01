@@ -1,17 +1,19 @@
 from pathlib import Path
 
-def HistoricoOperacoes(arq, operacao):
+def HistoricoOperacoes(operacao):
+    print("Excelente, agora digite aqui o nome do arquivo com histórico de operações")
+    arq = str(input())
     if not Path(f'{arq}.txt').exists():
-        print("Excelente, agora digite aqui o nome que gostaria de dar ao arquivo onde vão constar o histórico de operações")
-        arq = str(input())
+        print("Ops, vi que esse arquivo não existe, mas vamos criá-lo")
         with open(f'{arq}.txt', 'w', encoding='utf-8') as arquivo:
             arquivo.write(f'{operacao}\n')
             arquivo.close()
+        print("Tudo certo!")
         
     else:
         with open(f'{arq}.txt', 'a+', encoding='utf-8') as arquivo:
             arquivo.write(f'{operacao}\n')
             arquivo.close()
-        print("Arquivo atualizado")
+        print("Arquivo atualizado com sucesso!")
     
     return arquivo    

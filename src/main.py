@@ -23,29 +23,23 @@ def main():
         case 1:
             resultado = Soma()
             print("=-"*20)
-            print(f"O resultado da soma é: {resultado}")
         case 2:
             resultado = Subtracao()
             print("=-"*20)
-            print(f'O resultado da subtração é: {resultado}')
         case 3:
             resultado = Divisao()
             print("=-"*20)
-            print(f"O resultado da divisão é: {resultado}")
         case 4:
             resultado = Multiplicacao()
             print("=-"*20)
-            print(f"O resultado da multiplicação é: {resultado}")
         case 5:
             resultado = RaizQuadrada()
             print("=-"*20)
-            print(f"O resultado da raiz quadrada é: {resultado}")
         case 6:
             resultado = Potencia()
             print("=-"*20)
-            print(f"O resultado da potência é: {resultado}")
-    
-    HistoricoOperacoes(resultado, resultado)
+    print("=-"*20)
+    HistoricoOperacoes(resultado)
 
 if __name__ == "__main__":
     main()
