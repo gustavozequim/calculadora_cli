@@ -39,7 +39,10 @@ def main():
             resultado = Potencia()
             print("=-"*20)
     print("=-"*20)
-    HistoricoOperacoes(resultado)
+    if resultado != None:
+        HistoricoOperacoes(resultado)
+    else:
+        print("Houve um erro!")
 
 if __name__ == "__main__":
     main()
